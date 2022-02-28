@@ -2,6 +2,11 @@ package app.netflixkotlin
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import app.netflixkotlin.dataObject.Films
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+import org.junit.Assert
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -21,4 +26,22 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("app.netflixkotlin", appContext.packageName)
     }
+
+//    @Test
+//    fun test_001_insertFilmBdd() {
+//        val a = MainActivity()
+//
+//        val myScope = GlobalScope
+//        runBlocking {
+//            myScope.launch {
+//                a.getRepo().deleteAll()
+//                var results : List<Films> = a.getRepo().getHistorical()
+//                Assert.assertEquals(0, results)
+//            }
+//
+//        }
+//    }
+
+
+
 }

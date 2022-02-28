@@ -10,7 +10,7 @@ class Rest
 {
     object ApiClient {
         //private const val BASE_URL: String = "https://jsonplaceholder.typicode.com/"
-        private const val BASE_URL: String = "https://unogsng.p.rapidapi.com/countries"
+        private const val BASE_URL: String = "https://unogsng.p.rapidapi.com/"
 
         private val gson : Gson by lazy {
             GsonBuilder().setLenient().create()

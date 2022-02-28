@@ -1,5 +1,8 @@
 package app.netflixkotlin
 
+import app.netflixkotlin.bdd.AppDataBase
+import app.netflixkotlin.bdd.Repository
+import app.netflixkotlin.dataObject.Films
 import org.junit.Test
 
 import org.junit.Assert.*
